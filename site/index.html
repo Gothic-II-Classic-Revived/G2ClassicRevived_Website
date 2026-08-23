@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gothic II Classic Revived development archive.">
+    <title>Gothic II Classic Revived</title>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./js/common.js" defer></script>
+    <script src="./js/site.js" defer></script>
+    <script src="./js/home.js" defer></script>
+    <script src="./js/gallery.js" defer></script>
+    <script src="./js/videos.js" defer></script>
+</head>
+<body>
+    <section class="site-page page-main is-active" id="page-main" data-page="main" aria-hidden="false">
+        <header class="site-header">
+            <div class="logo-text">Gothic II Classic Revived</div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><button class="nav-link" type="button" data-show-page="images">Images</button></li>
+                    <li><button class="nav-link" type="button" data-show-page="videos">Videos</button></li>
+                    <li><a class="nav-link external-link" href="https://discord.gg/H6kGMaN7P2" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content main-content">
+            <aside class="media-counter" aria-live="polite" aria-label="Development media totals">
+                <div><span class="label">Videos:</span> <span class="count videos">…</span></div>
+                <div><span class="label">Images:</span> <span class="count images">…</span></div>
+            </aside>
+
+            <div class="info-column">
+                <section class="info-section" id="team">
+                    <h2>Team</h2>
+                    <p><strong>Damian "Qualshy"</strong> - project lead, scripting, world design and Gothic sorcerer</p>
+                    <p><strong>UviLiar</strong> - item help, world mesh design, and mutual trashtalking</p>
+                    <p><strong>Doick</strong> - scripts and plugins support wizard</p>
+                    <p><strong>Bloody</strong> - world mesh fixing and doing anything but what he's tasked with</p>
+                    <p><strong>Alistair</strong> - assets support, German localization and sleeping on the job</p>
+                    <div class="section-spacer" aria-hidden="true"></div>
+                    <p><strong>Testers &amp; Friends</strong> - a rotating cast of masochists from Discord</p>
+                    <div class="section-spacer" aria-hidden="true"></div>
+                    <p><strong>Special thanks to</strong> <a href="https://discord.gg/mCpS5b5SUY" target="_blank" rel="noopener noreferrer">Gothic Modding Community</a></p>
+                </section>
+
+                <section class="info-section" id="download">
+                    <h2>Download</h2>
+                    <p>The mod is still in development, but available to get on <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3430539140" target="_blank" rel="noopener noreferrer">Steam Workshop!</a> and ModDB</p>
+                    <div class="moddb-buttons">
+                        <a href="https://www.moddb.com/mods/gothic-ii-classic-revived" title="View Gothic II Classic Revived on ModDB" target="_blank" rel="noopener noreferrer"><img src="https://button.moddb.com/rating/medium/mods/70204.png" alt="Gothic II Classic Revived"></a>
+                        <a href="https://www.moddb.com/mods/gothic-ii-classic-revived" title="View Gothic II Classic Revived on ModDB" target="_blank" rel="noopener noreferrer"><img src="https://button.moddb.com/popularity/medium/mods/70204.png" alt="Gothic II Classic Revived"></a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </section>
+
+    <section class="site-page page-images" id="page-images" data-page="images" aria-hidden="true" hidden>
+        <h1 class="archive-title">
+            <button class="page-title-link" type="button" data-show-page="main">Gothic II Classic Revived - Dev Screenshots</button>
+        </h1>
+
+        <main class="gallery-container" id="gallery-root">
+            <p class="loading-message">Loading screenshots…</p>
+        </main>
+    </section>
+
+    <section class="site-page page-videos" id="page-videos" data-page="videos" aria-hidden="true" hidden>
+        <h1 class="archive-title">
+            <button class="page-title-link" type="button" data-show-page="main">Gothic II Classic Revived - Dev Videos</button>
+        </h1>
+
+        <main class="video-container">
+            <div class="video-gallery" id="video-gallery">
+                <p class="loading-message">Loading videos…</p>
+            </div>
+        </main>
+    </section>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Screenshot preview">
+        <button class="close" id="lightbox-close" type="button" aria-label="Close image preview"></button>
+        <img id="lightbox-img" src="" alt="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; <span data-current-year>2025</span> Drakaniaverse. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
